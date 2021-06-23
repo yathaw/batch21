@@ -13,6 +13,7 @@ shoplues
 	- category_list.php
 	- category_new.php
 	- category_store.php
+	- category_delete.php
 
 	- subcategory_list.php
 	- subcategory_new.php
@@ -22,5 +23,8 @@ shoplues
 
 	- item_list.php
 	- item_new.php
+
+======================================
+Create Read Delete
 
 
