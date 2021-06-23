@@ -1,0 +1,26 @@
+Folder Structure
+-----------------
+
+shoplues
+	- backend
+	- favicon
+	- fonts
+	- frontend
+	- icon
+	- logo
+	- image
+
+	- category_list.php
+	- category_new.php
+	- category_store.php
+
+	- subcategory_list.php
+	- subcategory_new.php
+
+	- brand_list.php
+	- brand_new.php
+
+	- item_list.php
+	- item_new.php
+
+
