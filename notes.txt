@@ -24,7 +24,70 @@ shoplues
 	- item_list.php
 	- item_new.php
 
+	- frontendheader.php
+	- frontendfooter.php
+
 ======================================
 Create Read Delete
+
+
+Homework 	June 25 ( Friday )
+
+1. index.php မှာ brand က ပုံတွေပဲဆွဲထုတ်။
+
+2. Add to Cart Button ကိုနှိပ်ရင် localstorage ထဲသိမ်း။
+
+3. cart.php file အသစ်ယူပြီး frontend/shoppingcart.html က ui အတိုင်း localstorage ထဲက data ဆွဲထုတ်မယ်။
+
+4. login.php file အသစ်ယူပြီး frontend/login.html က ui လေးပေါ်အောင် copy past လုပ်မယ်။
+
+5. register.php file အသစ်ယူပြီး frontend/register.html က ui လေးပေါ်အောင် copy past လုပ်မယ်။
+
+---------------------------------------------------
+
+6. index.php မှာ item ဆွဲထုတ်ထားတဲ့ တခုချင်းစီကို click နှိပ်ရင် detail ကျမယ်။
+	detail.php file အသစ်ယူပြီး frontend/itemdetail.html က ui လိုမျိုး database က data ကို edit တုန်းကလိုမျိုး ဆွဲထုတ်မယ်။
+
+7. Navigation က Merchants ကို hover တင်လိုက်ရင် brand list တွေ dropdown ကျတယ်။ ထို brand တခုကို click နှိပ်ရင်
+	brand.php file အသစ်ယူပြီး frontend/brand.html က ui လိုမျိုး database က data နဲ့ looping ပတ်ပြီးဆွဲထုတ်မယ်။
+
+8. Navigation က Category ကို hover တင်လိုက်ရင် category list တွေ dropdown ကျတယ်။ ထို category တခုကို hover တင်လိုက်ရင် subcategory list တွေထပ်ကျတယ်။ ထို subcategory ကို click နှိပ်ရင်
+	subcategory.php file အသစ်ယူပြီး frontend/subcategory.html က ui လိုမျိုး database က data နဲ့ looping တွေပတ်ပြီး ဆွဲထုတ်မယ်
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
