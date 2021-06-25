@@ -50,19 +50,19 @@
                                             <?php if($logo){ ?>
                                                 <div class="mr-3">
                                                     <img src="<?= $logo; ?>"
-                                                        alt="user" class="rounded-circle" width="50"
+                                                        alt="logo" class="rounded-circle" width="50"
                                                         height="45" />
                                                 </div>
                                             <?php } ?>
                                             <div class="">
                                                 <h5 class="text-dark mb-0 font-16 font-weight-medium"> 
-                                                    <?= $name; ?>
+                                                    <?= $name ?>
                                                 </h5>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <a href="" class="btn btn-warning">
+                                        <a href="category_edit.php?id=<?= $id ?>" class="btn btn-warning">
                                             <i class="icofont-ui-settings"></i>
                                         </a>
 
