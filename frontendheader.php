@@ -91,7 +91,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-10">
-						<a href="" class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right"> Login | Sign-up </a>
+						<a href="login.php" class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right"> Login | Sign-up </a>
 
 						
 					</div>
@@ -106,20 +106,20 @@
 					<i class="icofont-search"></i>
 				</div>
 
-				<a href="" class="text-decoration-none d-xl-inline d-lg-inline d-md-inline d-sm-none d-none shoppingcartLink"> 
+				<a href="cart.php" class="text-decoration-none d-xl-inline d-lg-inline d-md-inline d-sm-none d-none shoppingcartLink"> 
 					<i class="icofont-shopping-cart"></i> 
 					<span class="badge badge-pill badge-light badge-notify cartNotistyle cartNoti"> 1 </span>
-					<span> 4,800 Ks </span>
+					<span class="cartTotal"> </span>
 				</a>
 
-				<a href="" class="text-decoration-none d-xl-none d-lg-none d-md-none d-sm-inline-block d-inline-block shoppingcartLink"> 
+				<a href="cart.php" class="text-decoration-none d-xl-none d-lg-none d-md-none d-sm-inline-block d-inline-block shoppingcartLink"> 
 					<i class="icofont-shopping-cart"></i>
 					<span class="badge badge-pill badge-light badge-notify cartNotistyle cartNoti"> 1 </span>
 				</a>
 
 				<!-- App Download -->
 
-				<img src="image/download.png" class="img-fluid d-xl-inline d-lg-inline d-md-none d-sm-none d-none" style="width: 150px">
+				<img src="frontend/image/download.png" class="img-fluid d-xl-inline d-lg-inline d-md-none d-sm-none d-none" style="width: 150px">
 			</div>
 		</div>
 	</div>
@@ -330,7 +330,7 @@
 			<a href="#"> Cart [ <span class="cartNoti"> 1 </span> ]  </a>
 			<hr>
 
-			<img src="image/download.png" class="img-fluid ml-2 text-center" style="width: 150px">
+			<img src="frontend/image/download.png" class="img-fluid ml-2 text-center" style="width: 150px">
 			<hr>
 
 			<p class="text-white ml-3"> Copyright &copy; <img src="logo/logo_wh_transparent.png" style="width: 20px; height: 20px"> 2019  </p>
