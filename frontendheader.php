@@ -1,5 +1,6 @@
 <?php 
 	require 'connection.php';
+	session_start();
 
 	$sql = "SELECT * FROM categories ORDER BY name ASC";
     $statement = $pdo->prepare($sql);
