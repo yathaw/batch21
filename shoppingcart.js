@@ -218,6 +218,61 @@ $(document).ready(function(){
 	});
 
 
+	$('.checkoutbtn').on('click', function(){
+		var notes = $('#notes').val();
+		var cart = localStorage.getItem('cart');
+		var cartArray = JSON.parse(cart);
+
+		var total = 0;
+
+		$.each(cartArray, function(i, v) {
+			var unitprice = v.price;
+			var discount = v.discount;
+			var qty = v.qty;
+
+			if (discount) {
+				var price = discount;
+			}else{
+				var price = unitprice;
+			}
+
+			var subtotal = price*qty;
+
+			total += subtotal;
+		});
+
+		$.post('storeorder.php',{
+			cart: cartArray,
+			note: notes,
+			total: total 
+		});
+
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

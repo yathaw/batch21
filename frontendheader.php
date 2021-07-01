@@ -92,7 +92,41 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-10">
-						<a href="login.php" class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right"> Login | Sign-up </a>
+
+<?php if(!isset($_SESSION['login_user'])){ ?>
+
+<a href="login.php" class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right"> Login | Sign-up </a>
+
+<?php } else { ?>
+
+<a href="javascript:void(0)" class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right" data-toggle="dropdown" role="button"> 
+	<?= $_SESSION['login_user']['name']; ?>
+	<i class="icofont-rounded-down"></i>
+</a>
+
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="">
+    	Profile
+    </a>
+  	<div class="dropdown-divider"></div>
+
+
+    <a class="dropdown-item" href="">
+    	Order History
+    </a>
+  	<div class="dropdown-divider"></div>
+
+  	<a class="dropdown-item" href="">
+    	Change Password
+    </a>
+  	<div class="dropdown-divider"></div>
+
+    <a class="dropdown-item" href="signout.php">
+    	Logout
+    </a>
+</div>
+
+<?php } ?>
 
 						
 					</div>

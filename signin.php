@@ -24,7 +24,13 @@
 		if($authuser['rname'] == 'Admin'){
 			header('location:category_list.php');
 		}else{
-			header('location:index.php');
+
+			if ($_SESSION['cartstatus']) {
+				header('location:cart.php');
+			}else{
+				header('location:index.php');
+			}
+
 		}
 	}
 	else{

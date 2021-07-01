@@ -95,14 +95,14 @@
 				</a>
 			</div>
 
-      		<p class="m-0 text-center text-white">Copyright &copy; <img src="../logo/logo_wh_transparent.png" style="width: 30px; height: 30px"> 2019</p>
+      		<p class="m-0 text-center text-white">Copyright &copy; <img src="logo/logo_wh_transparent.png" style="width: 30px; height: 30px"> 2019</p>
     	</div>
   	</footer>
   	
 	<script type="text/javascript" src="frontend/js/jquery.min.js"></script>
 	<!-- BOOTSTRAP JS -->
     <script type="text/javascript" src="frontend/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<script src="frontend/js/slick.js"></script>
     <script type="text/javascript" src="frontend/js/custom.js"></script>
 
     <!-- Owl Carousel -->
