@@ -110,7 +110,7 @@
                 </li>
 
                 <li>
-                    <a class="app-menu__item" href="dashboard.html">
+                    <a class="app-menu__item" href="order_list.php">
                         <i class="app-menu__icon icofont-prestashop"></i>
                         <span class="app-menu__label">
                             Order

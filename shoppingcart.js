@@ -245,6 +245,9 @@ $(document).ready(function(){
 			cart: cartArray,
 			note: notes,
 			total: total 
+		},function(response){
+			localStorage.clear();
+			location.href="ordersuccess.php";
 		});
 
 	});
