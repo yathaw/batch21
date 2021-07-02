@@ -10,6 +10,9 @@
         <!-- Data table plugin-->
         <script type="text/javascript" src="backend/js/plugins/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="backend/js/plugins/dataTables.bootstrap.min.js"></script>
+        <script type="text/javascript" src="backend/js/plugins/chart.js"></script>
+        <script type="text/javascript" src="monthlysale.js"></script>
+
         <script type="text/javascript">$('#sampleTable').DataTable();</script>
         <!-- Google analytics script-->
         <script type="text/javascript">

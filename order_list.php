@@ -2,11 +2,41 @@
 	require 'backendheader.php';
 	require 'connection.php';
 
-	$sql = 'SELECT * FROM orders ORDER BY created_at DESC';
-	$statement = $pdo->prepare($sql);
-	$statement->execute();
+	$active = 0;
+    $todaydate = date('Y-m-d');
 
-	$orders = $statement->fetchAll();
+	if (isset($_POST['search'])) {
+		$startDate = $_POST['startDate'];
+		$endDate = $_POST['endDate'];
+
+		$sql = 'SELECT orders.* 
+				FROM orders
+				INNER JOIN users ON orders.user_id = users.id
+				WHERE users.status = :value1
+				AND orders.orderdate BETWEEN :value2 and :value3
+				ORDER BY created_at DESC';
+		$statement = $pdo->prepare($sql);
+		$statement->bindParam(':value1', $active);
+		$statement->bindParam(':value2', $startDate);
+		$statement->bindParam(':value3', $endDate);
+		$statement->execute();
+		$orders = $statement->fetchAll();
+	} else{ 
+
+		$sql = 'SELECT orders.* 
+				FROM orders 
+				INNER JOIN users ON orders.user_id = users.id
+				WHERE users.status = :v1 
+				AND orders.orderdate = :v2
+				ORDER BY created_at DESC';
+		$statement = $pdo->prepare($sql);
+		$statement->bindParam(':v1',$active);
+		$statement->bindParam(':v2',$todaydate);
+
+		$statement->execute();
+
+		$orders = $statement->fetchAll();
+	}
 ?>
 	
 	<div class="app-title">
@@ -17,6 +47,31 @@
 
     <div class="row">
         <div class="col-md-12">
+
+        <div class="tile">
+            <h3 class="tile-title"> Search Order History </h3>
+            <div class="tile-body">
+                <form class="row" action="order_list.php" method="POST">
+                	<input type="hidden" name="search" value="search">
+                    <div class="form-group col-md-5">
+                        <label class="control-label">Start Date</label>
+                        <input class="form-control" type="date" name="startDate">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label class="control-label">End Date</label>
+                        <input class="form-control" type="date" name="endDate">
+                    </div>
+                    <div class="form-group col-md-2 align-self-end">
+                        <button class="btn btn-primary searchBtn btn-block" type="submit">
+                        	<i class="icofont-search-2"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
             <div class="tile">
                 <div class="tile-body">
                     <div class="table-responsive">
